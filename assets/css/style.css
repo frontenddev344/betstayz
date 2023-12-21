@@ -1,485 +1,663 @@
 html,
 body,
 #banner {
-	margin: 0;
-	transition: all 0.5s;
-}
-
-:root {
-	--main-color: #21bddd;
-	--bg-light: whitesmoke;
-	--font-color: #fff;
+  margin: 0;
 }
 
 html,
 body {
-	overflow-x: hidden !important;
-	width: 100% !important;
-	font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+
+}
+
+.section {
+  padding: 80px 0;
+}
+
+:root {
+  --primary-color: #0e2c2e;
+  --secondary-color: #565656;
+  --bg_color: #dfe6e9;
+
+
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
-	font-weight: 600;
-	font-family: 'Palanquin Dark', sans-serif;
-}
+h5,
+h6 {
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
 
-h1 {
-	font-size: 45px;
-}
-
-h2 {
-	font-size: 32px;
-	font-weight: 600;
-	color: var(--main-color);
-}
-
-h3 {
-	font-size: 26px;
-	font-weight: 800;
 }
 
 p {
-	color: #555555;
+
+  color: #565656;
+  line-height: 28px;
+  font-size: 18px;
 }
 
-
-
-.section {
-	padding: 80px 0;
+li {
+  color: #565656;
+  line-height: 28px;
+  font-size: 18px;
 }
 
-a.common_btn {
-	text-decoration: none;
-	padding: 8px 24px;
-	color: var(--font-color);
-	background: var(--main-color);
-	border: 1px solid transparent;
-	transition: all 0.5s;
-	border-radius: 5px;
+h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
 }
 
-a.common_btn:hover {
-	border: 1px solid var(--main-color);
-	color: var(--bg-dark);
-	background: var(--font-color);
+.heading_h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
 }
-
 
 .container {
-	width: 100%;
-	max-width: 1440px !important;
-	padding: 0 15px;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 1440px !important;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  background: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  display: inline-block;
+  border-radius: 4px;
+  position: relative;
+  border: 3px solid #0e2c2e;
+  background-image: -webkit-linear-gradient(30deg, #0e2c2e 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #0e2c2e 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+.button:hover {
+  transition: 0.5s;
+  color: #000 !important;
+  background-color: #fff;
+  background-position: 110%;
 }
 
 /* /header/ */
 
 
 .nav {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	text-transform: uppercase;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  text-transform: uppercase;
 }
 
 .nav>.nav-header {
-	flex: 0.95;
-	padding-left: 1rem;
+  flex: 0.95;
+  padding-left: 1rem;
 }
 
 .nav>.nav-header>.nav-title {
-	font-size: 22px;
+  font-size: 22px;
+  color: #000;
 }
 
 .nav>.nav-list {
-	display: flex;
-	gap: 2rem;
-	margin-bottom: 0;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0;
 }
 
 .nav>.nav-list>li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .nav>.nav-list>li a {
-	text-decoration: none;
-	cursor: pointer;
-	font-weight: 500;
-	color: var(--font-color);
-	transition: all 0.5s;
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.active {
-	color: var(--main-color) !important;
+.nav>.nav-list>li a.active {
+  color: #bbb
 }
 
 .nav>.nav-list>li a:hover {
-	color: var(--main-color)
+  color: #bbb;
+
 }
 
 .nav>#nav-check {
-	display: none;
+  display: none;
 }
 
 header {
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-	padding: 20px 0px;
-	background-color: #000;
-	border-bottom: 1px solid #fff;
-}
-
-.nav-title a {
-	text-decoration: none;
-	color: var(--main-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .nav-title a img {
-	max-width: 120px;
+  max-width: 120px;
 }
 
+
+/* banner */
+
 #banner {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
 
 .sub_banner img {
-	width: 100%;
-	height: 600px;
-	object-fit: cover;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 .sub_banner {
-	position: relative;
+  position: relative;
 }
 
 .sub_banner_content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	color: var(--font-color);
-	margin-top: 70px;
-	width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  margin-top: 70px;
+  width: 100%;
 }
 
 .sub_banner::before {
-	position: absolute;
-	content: '';
-	background: #000000a8;
-	width: 100%;
-	height: 100%;
-	z-index: 0;
+  position: absolute;
+  content: '';
+  background: #000000a8;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Destinations en Vedette  */
+
+.why_card img {
+  max-width: 60px;
+}
+
+.whychooseus h2 {
+  margin-bottom: 60px;
+  color: var(--primary-color);
+}
+
+.why_card h3 {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.why_card {
+  text-align: center;
+  border-radius: 5px;
+  height: 100%;
+  padding: 30px 20px;
+  border: 1px solid #0e2c2e;
+  transition: all 0.5s;
+}
+.why_card:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ background-color: var(--bg_color);
 }
 
 
-a.logo img {
-	max-width: 300px;
+.why_card p {
+  line-height: 26px;
+  color: var(--secondary-color);
 }
 
-h3 {
-	font-size: 26px;
-	font-weight: bold;
-	margin-bottom: 20px;
-	transition: all 0.5s;
+/* 
+Journey-begins */
+
+.journey-begins {
+  position: relative;
+  padding: 60px 15px;
 }
 
-.nav-title a svg {
-	width: 250px;
+.journey-begins:after {
+  content: "";
+  background: #dfe6e9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
 }
 
-.why_choose_card {
-	text-align: center;
-	border: 1px solid;
+.journey-inner {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.luxhotel_card {
-	margin-bottom: 30px;
-	transition: all 0.5s;
-	text-align: center;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.journey-inner h2 {
+  margin-bottom: 20px;
 }
 
-.luxhotel_card:hover img {
-	filter: grayscale();
+/* Casinos les plus recommandés*/
+
+.hotel_card .hotel_des {
+  padding: 30px 20px;
 }
 
-.luxury_hotels_inner {
-    border: 1px solid #22bddd;
+.hotel_card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
 }
 
+.hotel_card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* best_casino_vages */
+
+.best_casino_vages {
+  background-color: whitesmoke;
+}
+
+.best_casino_vages img {
+  border-radius: 15px;
+}
+
+.left_side_vegas ul li {
+  margin: 8px 0;
+}
+
+.best_casino_vages .even {
+  flex-direction: row-reverse;
+}
+
+.journey-beginsinlasvegas p {
+  font-size: 20px;
+}
+
+
+/* <!-- planing hotel section --> */
+
+.hotel_f_card {
+  text-align: center;
+  border: 1px solid;
+  height: 100%;
+  padding: 30px 20px;
+}
+
+.hotel_f_card i {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.grey_scale_img {
+  transition: 0.5s all;
+  border-radius: 15px;
+}
+
+.grey_scale_img:hover {
+  filter: grayscale(1);
+}
+
+/***footer**/
+.footer {
+  background: var(--primary-color);
+  padding: 40px 0 0;
+  text-align: center;
+}
+
+.footer img {
+  width: 150px;
+  filter: brightness(0) invert(1);
+}
+
+footer ul {
+  padding-top: 10px;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 24px;
+  margin: 40px 0 20px;
+}
+
+footer li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.footer_icon ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.footer_icon li a {
+  font-size: 26px;
+}
+
+.footer li a:hover {
+  text-decoration: underline;
+}
+
+.footer_box ul li:not(:last-child) {
+  margin-right: 22px;
+}
+
+.footer_box ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-top: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+footer .row {
+  align-items: flex-end;
+}
+
+.footer_box a {
+  line-height: 26px;
+}
+
+.footer_icon {
+  background: #dfe6e9;
+  padding: 10px 0;
+}
+
+.footer_icon li a {
+  color: var(--primary-color);
+}
+
+footer ul.nav-list {
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
 
 /****cookies*****/
 .cookie-alert {
-	align-items: baseline;
-	background: #fff;
-	color: var(--main-color);
-	left: auto;
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-	bottom: 0px;
-	display: none;
+  align-items: baseline;
+  background: #fff;
+  left: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  bottom: 0px;
+  display: none;
+  border-top: 2px solid var(--primary-color);
 }
 
 .cookie-alert.show {
-	display: block;
-	transform: translateY(0%);
-	transition-delay: 1000ms;
+  display: block;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
 }
 
 .cookie-alert .card-body {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 3rem;
 }
 
 .cookie-content {
-	width: 85%;
-	padding-right: 10px;
+  width: 85%;
+  padding-right: 10px;
 }
 
 .accept-btn {
-	width: 15%;
+  width: 15%;
 }
 
 .accept-cookies {
-	display: block;
-	text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .cookie-content p {
-	margin: 0;
-	padding-right: 10px;
+  margin: 0;
+  padding-right: 10px;
 }
 
-.footer_left ul {
-	display: flex;
-	padding: 0;
-	list-style: none;
-	justify-content: end;
+.cookie-content h4 {
+  color: var(--primary-color);
 }
 
-.footer_left ul li {
-	margin: 0px 7px;
+/* <!-- best casino in  monaco --> */
+
+.casino_in_monaco .odd_casino_monaco {
+  flex-direction: row-reverse;
+}
+.right_monaco a img {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
 }
 
-.footer_left ul li a {
-	color: var(--main-color);
-	text-decoration: none;
-	text-transform: capitalize;
-	font-size: 16px;
+
+/* accordian */
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+.accordion-body h4 {
+  font-size: 20px;
 }
 
-.footer_right ul {
-	display: flex;
-    padding-top: 10px;
-    list-style: none;
-    margin-bottom: 0;
+.accordion h3 {
+  margin-bottom: 0;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: var(--bg_color);
+  box-shadow:unset;
+}
+/****************privacy policy**********************/
+section.privacy-term-sec {
+  padding: 200px 0 60px;
 }
 
-.footer_right ul li {
-	margin-right: 25px;
+.privacy-term-sec .heading_h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 3px dashed var(--primary-color);
+  border-radius: 22px;
+  padding-bottom: 15px;
+  display: inline-block;
+  width: 100%;
 }
 
-.footer_right ul li a {
-	font-size: 20px;
-	color: var(--main-color);
+.privacy-term-content h3 {
+  font-size: 20px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
-footer {
-	background-color: #000;
+.privacy-term-content ul li {
+  padding-bottom: 10px;
+}
+.right_side_banner.text-center img {
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0px #737373;
+}
+div#banner h1, div#banner h2 {
+  color: #fff;
 }
 
-.footer_right h2 {
-	color: var(--main-color);
+/* macau */
+
+.macau_casinos_section .right_monaco a img {
+  border-radius: 50%;
+  width: 300px;
 }
 
-.footer_left .logo {
-	text-decoration: none;
-	font-size: 20px;
-	color: var(--main-color);
+
+.casino_page_section .right_monaco {
+  text-align: right;
+  height: 100%;
+}
+.casino_wrapper {
+  border-radius: 0px 60px 60px 0px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* padding: 30px 20px; */
 }
 
-footer .footer_left ul li a {
-	transition: all 0.5s;
+
+.casino_page_section .right_monaco a img
+{
+  border-radius: 0px 60px 60px 0px;
+  height: 100%;
+}
+.casino_wrapper .left_monaco h2 {
+  position: relative;
+}
+.casino_wrapper .left_monaco h2::before {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 2px;
+  background: var(--primary-color);
+  bottom: -5px;
+  border-radius: 15px;
+}
+.casino_wrapper .left_monaco {
+  padding: 20px;
+}
+.casino_page_section{
+  background-color:whitesmoke;
 }
 
-footer .footer_left ul li a:hover {
-	color: #fff;
+/* 
+singapore */
+
+.inner_mid_singapore {
+  padding: 20px;
+  height: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+}
+.inner_mid_singapore h2 {
+  margin-top: 20px;
 }
 
-footer .footer_rightul li a {
-	transition: all 0.5s;
+.sand_resorts.section h4 {
+  margin-bottom: 20px;
+}
+.sand_resort_inner ul li {
+  margin-bottom: 16px;
+}
+.sand_resort_inner ul{
+  padding: 0;
+}
+.sand_resorts{
+  background-color: var(--bg_color);
+}
+.singapore_bottom{
+  background-color: whitesmoke;
+}
+.singapore_bottom p{
+  font-size: 20px;
+}
+/*****contact*****/
+.contact-section {
+  background: var(--bg_color);
+  padding: 60px 0;
+  }
+  
+  .contact-content h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  }
+  
+  .contact-content a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  background-color: rgb(255 255 0 / 30%);
+  }
+  
+  .contact-form input, .contact-form textarea {
+  margin-bottom: 20px;
+  padding: 12px 10px;
+  box-shadow: 0 0 9px 2px rgb(0 0 0 / 10%);
+  resize: none;
+  }
+  
+  .contact-form .button {
+  width: 200px;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus{
+    outline:none;
+    box-shadow:none;
+    border: 1px solid var(--primary-color);
+  }
+  
+  .contact-form input::placeholder, .contact-form textarea::placeholder{
+    opacity:0.6;
+  }
+  .contact-content p span {
+    background: #e9eea3;
 }
 
-footer .footer_right ul li a:hover {
-	color: #fff;
+
+  /* new testing changes */
+
+  .home_banner img {
+    height: 600px;
 }
 
 .lower_footer {
-	background: #000;
-	border-top: 1px solid #fff;
+  background: #0e2c2e;
 }
-
-.lower_footer p {
-	color: #fff;
-	text-transform: capitalize;
-	font-weight: 500;
-	font-size: 14px;
+.lower_footer p{
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
 }
-
-.footer_right {
-	margin-top: 30px;
-	display: flex;
-	justify-content: end;
-	align-items: center;
-}
-
-.why_choose_card img {
-	max-width: 70px;
-	filter: invert(1);
-}
-
-.why_choose_card h3 {
-	margin-top: 22px;
-	margin-bottom: 22px;
-}
-
-.why_choose_card p {
-	color: #fff;
-}
-
-.why_choose_card {
-	color: #fff;
-	text-align: center;
-	border: unset;
-	height: 100%;
-	padding: 25px 15px;
-	border: 1px solid rgb(255 255 255 / 75%);
-	border-radius: 5px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.why_choose_card:hover h3 {
-	color: var(--main-color);
-}
-
-.why_choose {
-	background-position: center;
-	background-image: url(../images/iceland_bg3.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	z-index: 1;
-}
-
-.why_choose::before {
-	top: 0;
-	position: absolute;
-	content: '';
-	height: 100%;
-	width: 100%;
-	background-color: #000000c4;
-	z-index: -1;
-}
-
-.luxhotel_card img {
-	min-height: 490px;
-	object-fit: cover;
-	transition: all 0.5s;
-}
-
-.bottom_text_section {
-	background-color: var(--bg-light);
-}
-
-
-
-.luxhotel_card_further img {
-	min-height: 450px;
-	object-fit: cover;
-}
-
-.content_card {
-	padding: 20px 10px;
-}
-
-.before_banner_section {
-	background-color: var(--bg-light);
-}
-
-.why_choose_resort p {
-	color: #000;
-}
-
-.why_choose_resort h3 {
-	color: #000;
-}
-
-.why_choose_resort img {
-	filter: unset;
-}
-
-.content_card ul {
-	text-align: start;
-}
-
-input.form-control.sub_btn {
-	width: 200px;
-	padding: 10px;
-	background-color: var(--main-color);
-	color: var(--font-color);
-	border: 1px solid transparent;
-	transition: all 0.5s;
-}
-
-input.form-control.sub_btn:hover {
-	font-weight: 500;
-	background-color: #fff;
-	color: #000;
-	border: 1px solid var(--main-color);
-}
-
-.form-control {
-	padding: 10px;
-	border: 1px solid #00000024;
-	border-radius: unset;
-}
-
-
-
-.footer_left a img {
-    max-width: 300px;
-}
-
-.after_banner_section.section {
-    background: whitesmoke;
-}
-.luxury_hotels_inner img{
-transition: all 0.5s;
-}
-.luxury_hotels_inner img:hover{
-	filter: grayscale(1);
-	}
-
-	.right_side_first {
-		background: whitesmoke;
-		padding: 40px;
-		border-radius: 5px;
-	}
-	.contact_us.section {
-		border-top: 1px solid #21bddd61;
-	}
