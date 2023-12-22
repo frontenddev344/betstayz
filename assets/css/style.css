@@ -661,3 +661,12 @@ singapore */
 .why_card.indexwhy {
   text-align: start;
 }
+
+.common_tips_div {
+  border-bottom: 1px solid;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.tips_betting_inner {
+  border: 1px solid #000;
+}
