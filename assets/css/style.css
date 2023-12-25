@@ -137,11 +137,11 @@ h1 {
 }
 
 .nav>.nav-list>li a.active {
-  color: #bbb
+  color: #000
 }
 
 .nav>.nav-list>li a:hover {
-  color: #bbb;
+  color: #000;
 
 }
 
