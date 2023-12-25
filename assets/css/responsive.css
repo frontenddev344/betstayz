@@ -1,3 +1,15 @@
+@media screen and (min-width: 1200px) {
+  .hotel_card img {
+    height: 280px;
+}
+.hotel_card .hotel_des {
+  padding: 20px 10px;
+}
+p {
+  line-height: 25px;
+  font-size: 17px;
+}
+}
 @media screen and (max-width:1024px) {
   .cookie-content {
     width: 100%;
