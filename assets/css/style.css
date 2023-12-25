@@ -355,7 +355,7 @@ footer ul {
 footer h3 {
   color: #fff;
   font-size: 24px;
-  margin: 40px 0 20px;
+  margin: 25px 0 20px;
 }
 
 footer li a {
@@ -500,14 +500,14 @@ footer ul.nav-list {
 
 /****************privacy policy**********************/
 section.privacy-term-sec {
-  padding: 200px 0 60px;
+  padding: 100px 0 60px;
 }
 
 .privacy-term-sec .heading_h2 {
   color: var(--primary-color);
   text-align: center;
   margin-bottom: 40px;
-  border-bottom: 3px dashed var(--primary-color);
+  border-bottom:unset;
   border-radius: 22px;
   padding-bottom: 15px;
   display: inline-block;
