@@ -87,6 +87,11 @@ h1 {
   background-position: 0%;
   -webkit-transition: background 300ms ease-in-out;
   transition: background 0.5s ease-in-out;
+  
+}
+.button.hotel_btn{
+  position: absolute;
+  bottom: 10px;
 }
 
 .button:hover {
@@ -288,6 +293,7 @@ Journey-begins */
   border-radius: 15px;
   height: 100%;
   overflow: hidden;
+  position:relative;
 }
 
 /* best_casino_vages */
@@ -699,4 +705,8 @@ singapore */
 }
 .lower_banner.section {
   background: var(--bg_color);
+}
+
+.hotel_des p {
+  margin-bottom: 60px;
 }
